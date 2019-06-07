@@ -5,6 +5,13 @@ class Nav extends React.Component {
     render() {
         return(
             <div className='navBar'>
+                 <button 
+                onClick={this.props.handleClick} 
+                className='navBtn'
+                id='sideBtn'
+                >
+                    Side Bar
+                </button>
                 <button 
                 onClick={this.props.handleClick} 
                 className='navBtn'
@@ -12,13 +19,7 @@ class Nav extends React.Component {
                 >
                     Home
                 </button>
-                <button 
-                onClick={this.props.handleClick} 
-                className='navBtn' 
-                id='profNav'
-                >
-                    Profile
-                </button>
+                
                 <button 
                 onClick={this.props.handleClick} 
                 className='navBtn'
@@ -35,11 +36,12 @@ class Nav extends React.Component {
                 </button>
                 <button 
                 onClick={this.props.handleClick} 
-                className='navBtn'
-                id='sideBtn'
+                className='navBtn' 
+                id='profNav'
                 >
-                    Side Bar
+                    Profile
                 </button>
+               
             </div>
         )
     }
