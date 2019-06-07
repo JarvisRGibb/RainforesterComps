@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Components/NavBar/nav'
 import Profile from './Components/Profile/profile'
-import LandingPage from './Components/Landing Page/landingPage'
+import LandingPage from './Components/LandingPage/landingPage'
 import About from './Components/About/about'
 import SocialContract from './Components/SocialContract/socialContract'
 
