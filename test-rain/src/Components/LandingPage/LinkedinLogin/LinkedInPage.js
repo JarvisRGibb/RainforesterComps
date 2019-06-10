@@ -15,10 +15,10 @@ class LinkedInPage extends Component {
       code: data.code,
       errorMessage: '',
     });
-    DummyData.push ({
-        Token: this.state.code
-    })
-    console.log (DummyData);
+    // DummyData.push ({
+    //     Token: this.state.code
+    // })
+    // console.log (DummyData);
   
   }
 
@@ -36,6 +36,7 @@ class LinkedInPage extends Component {
       <div>
         <LinkedIn
           clientId="86thexe5akk06p"
+          scope="r_basicprofile"
           onFailure={this.handleFailure}
           onSuccess={this.handleSuccess}
           redirectUri="http://localhost:3000/linkedin"

@@ -4,13 +4,14 @@ import Profile from './Components/Profile/profile'
 import LandingPage from './Components/LandingPage/landingPage'
 import About from './Components/About/about'
 import SocialContract from './Components/SocialContract/socialContract'
+import Demo from './index'
 
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-       disp: <LandingPage />
+       disp: null,
     }
   }
   handleClick = (event) => {
@@ -18,7 +19,7 @@ class App extends React.Component {
         this.setState({disp: <Profile />})
      } else if (event.target.id === 'homeNav') {
         console.log('Home Clicked')
-        this.setState({disp: <LandingPage />})
+        this.setState({disp: <Demo/>})
      } else if (event.target.id === 'aboutNav') {
       console.log('About Clicked')
       this.setState({disp: <About />})
