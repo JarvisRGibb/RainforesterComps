@@ -1,10 +1,14 @@
 import React from 'react'
+import SocialContractPng from "./socialContract.png";
 
 class SocialContract extends React.Component {
     render() {
         return(
             <div>
-                <h1>Hello From Social Contract Comp</h1>
+                <img src = {SocialContractPng} width = "50%" height = "50%"/>
+                <br></br>
+                <button width = "300%" height="300%">I AGREE</button>
+                
             </div>
         )
     }

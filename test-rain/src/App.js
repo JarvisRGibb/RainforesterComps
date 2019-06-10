@@ -5,6 +5,7 @@ import LandingPage from './Components/LandingPage/landingPage'
 import About from './Components/About/about'
 import SocialContract from './Components/SocialContract/socialContract'
 import Demo from './index'
+import LinkedInPage from './Components/LandingPage/LinkedinLogin/LinkedInPage';
 
 
 class App extends React.Component {
@@ -35,6 +36,7 @@ class App extends React.Component {
       <div>
          <Nav handleClick = {this.handleClick}/>
          {this.state.disp}
+         {console.log ("yeet"+this.state.disp)}
       </div>
     )
   }

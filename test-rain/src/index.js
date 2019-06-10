@@ -7,6 +7,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { LinkedInPopUp } from  'react-linkedin-login-oauth2';
 import LinkedInPage from './Components/LandingPage/LinkedinLogin/LinkedInPage';
+import LandingPage from './Components/LandingPage/landingPage';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -16,8 +17,9 @@ class Demo extends Component {
       <BrowserRouter>
         <Switch >
           <Route exact path="/linkedin" component={LinkedInPopUp} />
-          <Route path="/" component={LinkedInPage} />
+          <Route path="/" component={LandingPage} />
         </Switch>
+
       </BrowserRouter>
     );
   }
